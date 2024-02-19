@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AiCar4YH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./static/bootstrap-5.3.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./static/bootstrap-icons-1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <script src="./static/bootstrap-5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="./static/socket.io-4.7.4/socket.io.js"></script>
+
+  <!-- <style type="text/css">
+    #forward {
+      margin-left: 59px;
+      margin-bottom: 4px;
+    }
+
+    #retreat {
+      margin-top: 4px;
+      margin-left: 59px;
+    }
+
+    /* .btn {
+      background: #62559f;
+    } */ -->
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+        
+        <div class="row">
+          <div class="col bg-light p-3"></div>
+        </div>
+
+        <div class="row">
+            <div>
+              <div class="d-flex justify-content-center">
+                <button id="forward" class="btn btn-lg btn-outline-dark bi bi-arrow-up-circle-fill "></button>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button id='left' class="btn btn-lg btn-outline-dark bi bi-arrow-left-circle-fill"></button>
+                <button id='stop' class="btn btn-lg btn-outline-dark bi bi-stop-circle-fill"></button>
+                <button id='right' class="btn btn-lg btn-outline-dark bi bi-arrow-right-circle-fill"></button>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button id='retreat' class="btn btn-lg btn-outline-dark bi bi-arrow-down-circle-fill"></button>
+              </div>
+            </div>
+        </div>
+      
+      </div>
+      
+      <div class="col-6">
+        <div class="embed-responsive embed-responsive-16by9">
+          <video width="640" height="360" controls>
+            <source src="./video/8dj.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="col-3">
+        
+        <div class="row">
+          <div class="col bg-light p-3"></div>
+        </div>
+
+        <div class="row">
+            <div>
+              <div class="d-flex justify-content-center">
+                <button id="forward" class="btn btn-lg btn-outline-dark bi bi-arrow-up-circle-fill "></button>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button id='left' class="btn btn-lg btn-outline-dark bi bi-arrow-left-circle-fill"></button>
+                <button id='stop' class="btn btn-lg btn-outline-dark bi bi-stop-circle-fill"></button>
+                <button id='right' class="btn btn-lg btn-outline-dark bi bi-arrow-right-circle-fill"></button>
+              </div>
+              <div class="d-flex justify-content-center">
+                <button id='retreat' class="btn btn-lg btn-outline-dark bi bi-arrow-down-circle-fill"></button>
+              </div>
+            </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+<!-- 
+  <div id="container" class="container">
+
+    <div>
+      <button id="forward" class="btn btn-lg btn-outline-dark bi bi-arrow-up-circle-fill"></button>
+    </div>
+    <div>
+
+      <button id='left' class="btn btn-lg btn-outline-dark bi bi-arrow-left-circle-fill"></button>
+      <button id='stop' class="btn btn-lg btn-outline-dark bi bi-stop-circle-fill"></button>
+      <button id='right' class="btn btn-lg btn-outline-dark bi bi-arrow-right-circle-fill"></button>
+    </div>
+    <div>
+      <button id='retreat' class="btn btn-lg btn-outline-dark bi bi-arrow-down-circle-fill"></button>
+    </div>
+  </div> -->
+
+</body>
+
+</html>

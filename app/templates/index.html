@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AiCar4YH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{{url_for('static', filename='bootstrap-5.3.2/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{url_for('static', filename='bootstrap-icons-1.11.3/font/bootstrap-icons.css')}}" rel="stylesheet">
+  <script src="{{url_for('static', filename='bootstrap-5.3.2/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{url_for('static', filename='socket.io-4.7.4/socket.io.js')}}"></script>
+
+  <style type="text/css">
+    #forward {
+      margin-left: 59px;
+      margin-bottom: 4px;
+    }
+
+    #retreat {
+      margin-top: 4px;
+      margin-left: 59px;
+    }
+
+    /* .btn {
+      background: #62559f;
+    } */
+  </style>
+
+  <script type="text/javascript" charset="utf-8">
+    /*
+    var socket = io.connect('http://' + document.domain + ':' + location.port + '/ws');
+    
+    socket.on('connect', function() {
+      alert('connect');
+      //socket.emit('myEvent', {data: 'I\'m connected!'});
+      socket.emit('forward', {data: 'forward'});
+    });
+    */
+  </script>
+
+</head>
+
+<body>
+  <div id="container" class="container">
+
+    <div>
+      <button id="forward" class="btn btn-lg btn-primary bi bi-arrow-up-circle-fill"></button>
+    </div>
+    <div>
+
+      <button id='left' class="btn btn-lg btn-primary bi bi-arrow-left-circle-fill"></button>
+      <button id='stop' class="btn btn-lg btn-primary bi bi-stop-circle-fill"></button>
+      <button id='right' class="btn btn-lg btn-primary bi bi-arrow-right-circle-fill"></button>
+    </div>
+    <div>
+      <button id='retreat' class="btn btn-lg btn-primary bi bi-arrow-down-circle-fill"></button>
+    </div>
+  </div>
+
+</body>
+
+</html>
