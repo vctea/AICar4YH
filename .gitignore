@@ -1,0 +1,5 @@
+__pycache__/config.cpython-311.pyc
+app/__pycache__/__init__.cpython-311.pyc
+app/main/__pycache__/__init__.cpython-311.pyc
+app/main/__pycache__/events.cpython-311.pyc
+app/main/__pycache__/views.cpython-311.pyc
